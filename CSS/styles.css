@@ -1,0 +1,569 @@
+/*General Fonts Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');/*colocamos el estilo de letra*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');/*colocamos los iconos*/
+/*General Common Styles*/
+:root {
+    --primary: rgb(88, 252, 209);
+    --secondary: rgb(12, 238, 178);
+    --dark: rgb(33, 37, 47);
+    --body: rgb(136, 136, 136);
+    --white: rgb(246, 240, 240);/*si se altera esta linea, se altera la linea 46*/
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    font: normal 16px sans-serif;
+    color: #07dffd;
+    scroll-behavior: smooth !important;
+}
+
+ul, nav {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.9;
+}
+a:hover {
+    opacity: 1;
+}
+a.btn {
+    color: rgb(5, 248, 183);
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: #f31d4d;
+    font-weight: 800;
+    text-align: center;
+}
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+/*Section Common Styles*/
+section{
+    padding-left: 0rem;
+    margin-left: 0rem;
+}
+
+/*Header styles*/
+#header.navbar .container-fluid
+{
+    background-color: rgb(255, 0, 0);
+}
+#header #language1{
+    padding-right: 3rem;
+    color: #ffffff;
+}
+#header #language{
+    padding-left: 0.5rem;
+    color: #00e7ff;
+}
+#header #switcher{
+    display: flex;
+}
+#header .form-switch{
+    align-items: flex-end;
+}
+/*Aqui se estiliza el tamaño del logo*/
+#header .navbar .container-fluid .navbar-brand img{
+    width: 35px;
+    height: 31px;
+}
+
+
+/**/
+#header .navbar{
+    display: flex;
+    background-color: #000000;
+    border-bottom: 1px solid rgb(2, 2, 2);
+    position: sticky;
+    box-shadow: var(--box-shadow);
+}
+#header .navbar .navbar-brand {
+    font-size: 25px;
+    padding-left: 3rem;
+}
+#header .language{
+    padding-left: 7rem;
+}
+#header .form-switch{
+    display: flex;
+}
+
+#header .nav-item span{
+    padding-left:1px;
+    padding-right: 3rem;
+    color: #ffffff;
+}
+#header .container-button .toggle.active{
+    background: #ffffff;
+}
+#header .container-button .toggle.active .toggle-button{
+    Left:35px;
+}
+#header .container-button .toggle .text{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top:3px;
+    Left:70px
+
+}
+#header .switch .container{
+}
+#header .form-check-input {
+    width: 50px;
+    height: 25px;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+/* hero section */
+#hero{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+#hero .container .card-group #card-center .card-body{
+    background-color: #ffffff;
+    color: rgb(27, 23, 23);
+}
+#hero .container .card-group .card-body{
+    background-color:#000000;
+    color: #f5f5f5;
+}
+#hero #home .row button{
+    background-color: rgb(246, 4, 4);
+}
+#hero p1
+{
+    font-size: 50px;
+}
+.div-con-fondo{
+
+    background-image: url('https://photomkt.com/wp-content/uploads/2019/11/Blog-FullFrame-Photomkt-Impacto-De-La-Fotografia-En-Blanco-Y-Negro-4.jpg');
+
+    /* Para dejar la imagen de fondo centrada, vertical y
+
+    horizontalmente */
+
+    background-position: center center;
+
+    /* Para que la imagen de fondo no se repita */
+
+    background-repeat: no-repeat;
+
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+
+    background-attachment: fixed;
+
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+
+    background-size: cover;
+
+    /* Se muestra un color de fondo mientras se está cargando la imagen
+
+    de fondo o si hay problemas para cargarla */
+
+    background-color: #66999;
+}
+#hero .callTo-Buttons{
+    cursor: pointer;
+}
+#hero .callTo-Buttons{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/*AboutUs styles*/
+#Us .embed-responsive {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#about-us {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+#Us .container .row ul li span{
+    padding-left: 1rem;
+}
+#Us .container .row ul li span::before{
+    padding-left: 1rem;
+}
+#Us .container .row ul li span::after{
+    padding-left: 1rem;
+}
+/*AboutTheTeam styles*/
+
+#about-team .container .row .team-member img{
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+
+#about-team .container .row .team-member .social-icons a{
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    border-radius: 2px solid var(--primary);
+    color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    border: 2px solid var(--primary);
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+    background-color: transparent;
+    border-color: var(--primary);
+}
+#about-team .embed-responsive {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#Us iframe {
+
+}
+
+/*Services styles*/
+
+#services .row {
+    margin-top: 5rem;
+}
+#services .container{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+#services h5{
+    text-transform: uppercase;
+    size-adjust: auto;
+    color: rgb(136, 136, 136);
+}
+#services p{
+    color: rgb(136, 136, 136);
+}
+#services h1{
+    color: rgba(234, 5, 150, 0.99);
+}
+#services li{
+    color: rgb(136, 136, 136);
+}
+#services .texts{
+    justify-content: flex-start;
+
+}
+#services .texts h4{
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-weight: 900;
+}
+#services .texts h1{
+    font-weight: 500;
+}
+#services .texts p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: rgb(234, 12, 12);
+    font-size: 16px;
+    padding: 3rem 1rem 3rem 1rem;
+    max-width: 330px;
+    text-transform: uppercase;
+}
+#services span{
+    display: flex;
+    width: 200px;
+    height: 50px;
+}
+#services .texts .callTo-Buttons{
+    height: 100%;
+    width: 100%;
+}
+#services .image-app{
+    justify-content: flex-end;
+}
+#services .routes{
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    background-color: #f6f0f0;
+}
+#services .maintain{
+    background-color: #f6f0f0;
+}
+#services .image-left{
+    margin: 2rem;
+}
+#services .container-texts{
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    height:400px;
+}
+#services .container-texts h5{
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+#services .container-texts h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+#services .container-texts p{
+    font-size: 20px;
+}
+#services ul{
+    padding-top: 1rem;
+    list-style: none;
+}
+#services li i{
+    color: rgb(238, 255, 125);
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+}
+#services .calls .container .container-texts{
+    width: 500px;
+}
+#services .calls .container .image-calls img{
+    padding: 1rem;
+    width: 300px;
+    height: auto;
+
+}
+
+/*Pricing styles*/
+#pricing .container{
+    margin-top: 4rem;
+}
+
+#pricing i {
+    font-size: 20px;
+    color: var(--secondary);
+}
+
+#pricing ul li {
+    margin-top: 8px;
+}
+#pricing hr{
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+}
+
+/*Contact Styles*/
+/*TODO: Implement contact styles*/
+#contact-Us .container{
+    padding-top: 5rem;
+}
+#contact-Us .container form .col-md-10 button{
+    height: 50px;
+    border-color: rgb(36, 41, 51);
+    color: rgb(246, 240, 240);
+    background-color: rgb(33, 37, 47);
+}
+#contact-Us .container form .col-md-10 button:hover{
+    background-color: rgb(48, 56, 65);
+}
+#contact-Us #EnterMessage{
+    color: var(--body);/*si se altera esta linea, se altera la linea 372,379,387*/
+}
+
+
+#Formulari/* formulario */
+{
+    font-family: 'Roboto';
+    background: #21252f;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #21252f);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #21252f);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 1050px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#Formulari h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+#Formulari form{
+    background: #fff;
+    padding: 0.01px 0; /* esto altera el alto del formulario  */
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 5px; /* esto altera los bordes */
+}
+
+#Formulari .form{
+    width: 100%;
+    margin: auto;
+}
+
+#Formulari form .grupo{
+    position: relative;
+    margin: 45px ;
+}
+
+#Formulari input{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+#Formulari input:focus{
+
+    outline: none;
+    color: #5e5d5d;
+}
+
+#Formulari label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+#Formulari input:focus~label,
+#Formulari input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #21252f;
+}
+
+#Formulari .barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+#Formulari .barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #ffffff, #21252f);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+#Formulari input:focus~.barra::before{
+    width: 100%;
+}
+
+
+#Formulari button{
+    font-family: 'roboto';
+    background: #21252f;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #21252f);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #21252f);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#Formulari .col-md-10 /* seccion y div Class */
+{
+    padding-left: 60px; /* relleno a la izquierda */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    /*Footer styles*/
+#footer{
+    padding-top: 5rem;
+}
+#footer .footer-top {
+    color:var(--body);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: var(--dark);
+}
+
+#footer .footer-top a {
+    color: var(--body);
+}
+
+#footer .footer-top a:hover {
+    color: var(--white);
+}
+
+#footer .footer-bottom {
+    color:var(--body);
+    background-color: rgba(33, 37, 47, 0.97);
+}
+#footer .logo-foot {
+    width: 15%;
+}
+#footer .App-name{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+#footer .social-icons a{
+    padding-left: 1rem;
+}
+
